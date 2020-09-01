@@ -1,0 +1,16 @@
+<div class="card">
+  <h5 class="card-header">
+      <h2><%= @task.title %></h2>
+  </h5>
+  <div class="card-body">
+    <h3 class="card-title">
+      <p><%= @task.details %></p>
+    </h3>
+      <p class="card-text"><%= @task.completed == true ? 'Completed : ✅' : 'Completed : ❌' %></p>
+
+
+      <%= link_to "Tasks", tasks_path %>
+      <br>
+      <%= link_to "Edit task", edit_path %>
+  </div>
+</div>
